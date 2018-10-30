@@ -59,3 +59,5 @@ typings/
 
 # project-specific files
 versions
+playlist.json
+beatsaver-songs.json
