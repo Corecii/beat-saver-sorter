@@ -127,7 +127,7 @@ exports.sort = async function(settings) {
 
 	const pointsPerDay = settings.pointsPerDay || 1.25/30;
 	const calculateScore = settings.calculateScore || async function(song) {
-		return song.createdAtUnix/(60*60*24)*pointsPerDay + getBaseLog(settings.playedBase || 10, Math.max(1, song.playedCount)) + getBaseLog(settings.scoreBase || 2, Math.max(1, song.score));
+		return song.createdAtUnix/(60*60*24)*pointsPerDay + getBaseLog(settings.playedBase || 11, Math.max(1, song.playedCount)) + getBaseLog(settings.scoreBase || 6, Math.max(1, song.score));
 	}
 
 	const minDate = settings.minData, maxDate = settings.maxDate;
